@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Easy Selectable</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script src="src/js/easySelectable.js"></script>
+	<script src="index.js"></script>
+	<link rel="stylesheet" href="src/css/easySelectable.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="sunburst.css">
+</head>
+<body>
+	<div id="wrap">
+		<section>
+			<h2 class="wrap__title">easySelectable example</h2>
+			<ul id="easySelectable">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+				<li>11</li>
+				<li>12</li>
+				<li>13</li>
+				<li>14</li>
+				<li>15</li>
+				<li>16</li>
+			</ul>
+			<div>
+				<h4 class="wrap__title">javascript</h4>
+				<pre class="prettyprint lang-javascript">$('#easySelectable').easySelectable();</pre>
+			</div>
+			<div>
+				<h4 class="wrap__title">html</h4>
+				<pre class="prettyprint lang-html">
+&lt;ul id=&quot;easySelectable&quot;&gt;
+	&lt;li&gt;1&lt;/li&gt;
+	&lt;li&gt;2&lt;/li&gt;
+	&lt;li&gt;3&lt;/li&gt;
+	&lt;li&gt;4&lt;/li&gt;
+	&lt;li&gt;5&lt;/li&gt;
+	&lt;li&gt;6&lt;/li&gt;
+	&lt;li&gt;7&lt;/li&gt;
+	&lt;li&gt;8&lt;/li&gt;
+	&lt;li&gt;9&lt;/li&gt;
+	&lt;li&gt;10&lt;/li&gt;
+	&lt;li&gt;11&lt;/li&gt;
+	&lt;li&gt;12&lt;/li&gt;
+	&lt;li&gt;13&lt;/li&gt;
+	&lt;li&gt;14&lt;/li&gt;
+	&lt;li&gt;15&lt;/li&gt;
+	&lt;li&gt;16&lt;/li&gt;
+&lt;/ul&gt;</pre>
+			</div>
+		</section>
+		<section>
+			<h2 class="wrap__title">Options</h2>
+			<table class="wrap__table">
+				<thead>
+					<th>Name</th>
+					<th>Expected</th>
+					<th>Default</th>
+					<th>Description</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>item</td>
+						<td>string</td>
+						<td>li</td>
+						<td>Selector of elements inside main block for selected</td>
+					</tr>
+					<tr>
+						<td>state</td>
+						<td>boolean</td>
+						<td>true</td>
+						<td>Selectable on/off</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<h2 class="wrap__title">Callbacks <span class="small">callback parameter el = current selected object;</span></h2>
+			<table class="wrap__table">
+				<thead>
+					<th>Name</th>
+					<th>parameter</th>
+					<th>Description</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>onSelected</td>
+						<td>el</td>
+						<td>Executes after every selected set elements</td>
+					</tr>
+					<tr>
+						<td>onUnSelected</td>
+						<td>el</td>
+						<td>Executes after every unselected set elements</td>
+					</tr>
+					<tr>
+						<td>onSelecting</td>
+						<td>el</td>
+						<td>Executes after every change selected</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</div>
+</body>
+</html>
