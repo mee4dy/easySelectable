@@ -4,7 +4,7 @@ jQuery easySelectable
 
 Demo
 ----------------
-[JQuery easySelectable demo](https://mee4dy.ru/dev/github/easySelectable/index.html)
+[JQuery easySelectable demo](https://mee4dy.ru/dev/github/plugins/easySelectable/index.html)
 
 Description
 ----------------
