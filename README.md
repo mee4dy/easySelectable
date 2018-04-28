@@ -4,7 +4,7 @@ jQuery easySelectable
 
 Demo
 ----------------
-[JQuery easySelectable demo](http://sachinchoolur.github.io/lightslider/)
+[JQuery easySelectable demo](https://mee4dy.io/dev/github/easySelectable/index.html)
 
 Description
 ----------------
