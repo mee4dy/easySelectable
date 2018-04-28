@@ -8,8 +8,14 @@ Author: mee4dy@gmail.com
 		var options = $.extend({
 			'item': 'li',
 			'state': true,
-			'selecting': function(el){
+			onSelecting: function(el){
 
+			},
+			onSelected: function(el){
+
+			},
+			onUnSelected: function(el){
+				
 			}
 		}, options);
 		el.on('dragstart', function(event) { event.preventDefault(); });
@@ -29,23 +35,27 @@ Author: mee4dy@gmail.com
 					if(!hasClass2){
 						$(this).addClass('es-selected').trigger('selected');
 						el.trigger('selected');
-						options.selecting($(this));
+						options.onSelecting($(this));
+						options.onSelected($(this));
 					}
 					else{
 						$(this).removeClass('es-selected').trigger('unselected');
 						el.trigger('unselected');
-						options.selecting($(this))
+						options.onSelecting($(this))
+						options.onUnSelected($(this));
 					}
 				});
 				if(!hasClass){
 					$(this).addClass('es-selected').trigger('selected');
 					el.trigger('selected');
-					options.selecting($(this));
+					options.onSelecting($(this));
+					options.onSelected($(this));
 				}
 				else{
 					$(this).removeClass('es-selected').trigger('unselected');
 					el.trigger('unselected');
-					options.selecting($(this));
+					options.onSelecting($(this));
+					options.onUnSelected($(this));
 				}
 				var relativeX = (e.pageX - offset.left);
 				var relativeY = (e.pageY - offset.top);
