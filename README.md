@@ -39,15 +39,15 @@ add the Following code to the &lt;head&gt; of your document.
     <li>14</li>
     <li>15</li>
     <li>16</li>
-  </ul>
+</ul>
 ```
 
 ### Call easySelectable! ###
 ```html
 <script type="text/javascript">
 $(function(){
-	$('#easySelectable').easySelectable();
-})
+    $('#easySelectable').easySelectable();
+});
 </scirpt>
 ```
 
@@ -55,19 +55,19 @@ $(function(){
 ```html
 <script type="text/javascript">
 $(function(){
-  $('#easySelectable').easySelectable({
-    item: 'li',
-    state: true,
-    onSelecting: function(){
-      console.log('onSelecting');
-    },
-    onSelected: function(){
-      console.log('onSelected');
-    },
-    onUnSelected: function(){
-      console.log('onUnSelected');
-    }
-  });
-})
+    $('#easySelectable').easySelectable({
+        item: 'li',
+        state: true,
+        onSelecting: function(){
+            console.log('onSelecting');
+        },
+        onSelected: function(){
+            console.log('onSelected');
+        },
+        onUnSelected: function(){
+            console.log('onUnSelected');
+        }
+    });
+});
 </scirpt>
 ```
