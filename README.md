@@ -17,7 +17,7 @@ add the Following code to the &lt;head&gt; of your document.
 <link type="text/css" rel="stylesheet" href="css/easySelectable.css" />
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="js/easySelectable.js"></script>
-    // Do not include both easySelectable.js and easySelectable.min.js
+// Do not include both easySelectable.js and easySelectable.min.js
 ```
 
 ### HTML Structure ###
@@ -55,7 +55,7 @@ $(function(){
 ```html
 <script type="text/javascript">
 $(function(){
-	$('#easySelectable').easySelectable({
+  $('#easySelectable').easySelectable({
     item: 'li',
     state: true,
     onSelecting: function(){
